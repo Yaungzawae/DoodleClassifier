@@ -41,7 +41,8 @@ pip install numpy pandas pygame scipy scikit-learn matplotlib
 
 ### Training the Model
 
-1. Run ```python load.py``` to download the model if it is not present and load it into numpy array.
+1. Specify the categories in `categories.py` if needed.
+2. Run ```python load.py``` to download the data and prepare for the training.
 2. Run the training script:
 
 ```
@@ -65,6 +66,12 @@ python game.py
 ## Data Augmentation
 
 See [`processing.random_augment_image`](processing.py) for details on how images are randomly transformed during training.
+
+The augmentation includes:
+- Random scaling (zooming in/out)
+- Random rotation
+- Random translation (shifting)
+- Adding Gaussian noise
 
 ## Model Architecture
 

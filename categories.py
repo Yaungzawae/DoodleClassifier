@@ -10,5 +10,6 @@ def getCategories():
         "sailboat",
         "bowtie",
         "clock",
-        "fish"
+        "fish",
+        "cat"
     ]

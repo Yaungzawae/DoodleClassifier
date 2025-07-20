@@ -2,6 +2,9 @@ import numpy as np
 import pandas as pd
 import os
 import processing
+from categories import getCategories
+
+label_n = len(getCategories())
 
 class Layer_Dense:
     def __init__(self, n_inputs, n_neurons, weights=None, biases=None):
@@ -123,7 +126,7 @@ class Model:
         self.activation3 = Activation_ReLu()
         self.dense4 = Layer_Dense(50, 40)
         self.activation4 = Activation_ReLu()
-        self.dense5 = Layer_Dense(40, 8)
+        self.dense5 = Layer_Dense(40, label_n)
         self.output_activation = Activation_Softmax_Loss_CategoricalCrossentropy()
 
         if use_existing:
