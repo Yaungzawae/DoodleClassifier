@@ -2,6 +2,7 @@
 
 A neural network-based doodle classifier that recognizes hand-drawn sketches from a set of categories. The project includes a PyGame-based drawing interface, a custom neural network implementation with data augmentation approach.
 
+![Demo][media/demo.gif]
 ## Features
 
 - Draw doodles on a 28x28 grid and get real-time predictions.
